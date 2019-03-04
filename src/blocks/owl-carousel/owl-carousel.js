@@ -13,7 +13,7 @@ $(document).ready(function(){
         center: true,
       },
       480 : {
-        items: 3,
+        items: 2,
       },
       768 : {
         items: 3,
