@@ -864,6 +864,37 @@ block content
     +block-lib-code()
       include:show-code(first-line='//- Pug-файл этого блока:') blocks/baron/baron.pug
 
+  +block-lib('card', 'Карточки товара', false)
+    include:markdown-it(html='true') blocks/card/readme.md
+    +block-lib-code()
+      include:show-code(first-line='//- Pug-файл этого блока:') blocks/card/card.pug
+
+    +card({
+      url: 'good01',
+      img: 'img/demo-product.jpg',
+      name: 'Товар1',
+      descr: 'Описание1',
+      price: 7777,
+      new: true
+    }, 'mod')
+    +card({
+      img: 'img/demo-product.jpg',
+      name: 'Товар2',
+      price: 12000
+    })
+    +card({
+      url: 'good01',
+      img: 'img/demo-product.jpg',
+      name: 'Товар1',
+      descr: 'Описание1',
+      price: 7777,
+      new: true
+    }, 'mod')
+    +card({
+      img: 'img/demo-product.jpg',
+      name: 'Товар2',
+      price: 12000
+    })
 
   .burger.blocks-library__menu-toggler(data-toggle='off-canvas')
     span(data-toggle='off-canvas')
