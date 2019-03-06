@@ -40,6 +40,7 @@ mixin card(data, mods)
   article.card(class=allMods)&attributes(attributes)
     != newLabel
     if (data.url !== 'undefined' && data.url)
+      .card__new new!
       .card__inner
         a.card__img-wrap(href=data.url)
           img.card__img(src=data.img, alt=data.name)
