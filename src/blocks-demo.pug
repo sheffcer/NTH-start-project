@@ -866,8 +866,8 @@ block content
 
   +block-lib('card', 'Карточки товара', false)
     include:markdown-it(html='true') blocks/card/readme.md
-    +block-lib-code()
-      include:show-code(first-line='//- Pug-файл этого блока:') blocks/card/card.pug
+    //+block-lib-code()
+      //include:show-code(first-line='//- Pug-файл этого блока:') blocks/card/card.pug
     .blocks-demo__cards-list(style='display: flex; flex-wrap: wrap;')
       +card({
         url: 'good01',

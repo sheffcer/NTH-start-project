@@ -48,7 +48,7 @@ mixin card(data, mods)
           a(href=data.url)!= data.name
         if (data.descr !== 'undefined' && data.descr)
           p.card__descr!= data.descr
-        p.card__price!= price
+        p.card__price!= data.price
     else
       .card__inner
         span.card__img-wrap
@@ -56,6 +56,6 @@ mixin card(data, mods)
         h3.card__title!= data.name
         if (data.descr !== 'undefined' && data.descr)
           p.card__descr!= data.descr
-        p.card__price!= price
+        p.card__price!= data.price
 
     +btn('Купить', '')(class='card__buy')
