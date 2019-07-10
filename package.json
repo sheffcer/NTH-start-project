@@ -71,7 +71,7 @@
     "postcss-import": "^11.0.0",
     "postcss-inline-svg": "^3.0.0",
     "postcss-object-fit-images": "^1.1.2",
-    "stylelint": "^9.1.1",
+    "stylelint": "^9.10.1",
     "vinyl-buffer": "^1.0.0"
   },
   "dependencies": {
